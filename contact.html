@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="head">Contact Vecta Corp.</h1>
+    <form name="contactform">
+        <p>Name:<br>
+        <input type="text" id="name" maxlength="20" placeholder="Enter your name" autofocus required></p>
+        <p>Email:<br>
+        <input type="email" id="email" maxlength="30" required></p>
+        <p>Phone:<br>
+        <input type="tel" id="phone" maxlength="15" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Ex: 555-555-5555"></p>
+        <p>Product Interest:<br>
+        <input type="checkbox" id="prod" name="prod" value="vProspect">vProspect 2.0<br>
+        <input type="checkbox" id="prod" name="prod" value="vConvert">vConvert 2.0<br>
+        <input type="checkbox" id="prod" name="prod" value="vRetain">vRetain 2.0
+        </p>
+        <p>Number of employees:<br>
+        <select id="employees">
+            <option>1-10</option>
+            <option>11-100</option>
+            <option>101-1000</option>
+            <option>1000+</option>
+        </select>
+        </p>
+        <p>Do you have any questions for our representatives?<br>
+        <textarea id="questions"></textarea></p>
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>
